@@ -4,7 +4,7 @@ Title::Title(const InitData& init)
 	: IScene{ init } {
 	Scene::SetBackground(ColorF{ 0.2, 0.8, 0.4 });
 
-	
+
 }
 
 void Title::update()
@@ -33,7 +33,7 @@ void Title::draw() const
 {
 
 	FontAsset(U"TitleFont")(U"HappyEscape")
-		.drawAt(Scene::Center().movedBy(0.0, -(WINDOW_HEIGHT/3)), Palette::Beige);
+		.drawAt(Scene::Center().movedBy(0.0, -(WINDOW_HEIGHT / 3)), Palette::Beige);
 
 	m_startButton.draw(ColorF{ 1.0, m_startTransition.value() }).drawFrame(2);
 	m_exitButton.draw(ColorF{ 1.0, m_exitTransition.value() }).drawFrame(2);

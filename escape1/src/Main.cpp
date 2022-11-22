@@ -1,6 +1,6 @@
 ﻿#include "Common.hpp"
-#include "Title.hpp"
-#include "Game.hpp"
+#include "Title/Title.hpp"
+#include "Game/Game.hpp"
 
 void Main()
 {

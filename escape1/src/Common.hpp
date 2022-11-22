@@ -13,3 +13,4 @@ enum class State
 };
 
 using App = SceneManager<State>;
+
