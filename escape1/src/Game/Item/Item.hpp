@@ -1,8 +1,13 @@
 ﻿#pragma once
-#include <iostream>
+#include <Siv3D.hpp>
 
 class Item
 {
+
+private:
+	Texture m_texture;
+	Circle m_circle;
+
 public:
 	Item(const Emoji& emoji, const Circle& circle)
 		: m_texture{ emoji }
@@ -15,7 +20,4 @@ public:
 	bool clicked() const;
 	void draw() const;
 
-private:
-	Texture m_texture;
-	Circle m_circle;
 };

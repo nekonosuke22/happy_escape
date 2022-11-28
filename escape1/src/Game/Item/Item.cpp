@@ -17,5 +17,4 @@ void Item::draw() const
 {
 	m_circle.draw(ColorF{ 1.0, 0.5, 0.0, 0.2 });
 	m_texture.drawAt(m_circle.center);
-
 }

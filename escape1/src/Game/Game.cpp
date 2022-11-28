@@ -5,6 +5,7 @@ Game::Game(const InitData& init)
 	: IScene{ init }
 {
 	Scene::SetBackground(ColorF{ 0.2, 0.8, 0.4 });
+	
 }
 
 void Game::update()
@@ -13,6 +14,8 @@ void Game::update()
 		changeScene(State::Title);
 	}
 	item_update();
+
+
 }
 
 void Game::draw() const
@@ -22,9 +25,16 @@ void Game::draw() const
 	FontAsset(U"Test")(U"Xボタンでタイトル").drawAt(Vec2{ 100, 80 }, Palette::Red);
 
 	ticket.draw();
+
+	font(text).draw(40, 400, ColorF{ 0.1, 0.1, 0.1 });
 }
 
 void Game::item_update()
 {
 	ticket.update();
+	if (ticket.clicked()) {
+		text = U"チケットだよ～";
+	}
+
+
 }

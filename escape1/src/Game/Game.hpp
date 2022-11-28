@@ -11,10 +11,16 @@ private:
 
 	Item ticket{ Emoji{ U"🎫" }, Circle{ 200, 300, 80 }};
 
+	Font font{ 25 };
+
 public:
 	Game(const InitData& init);
 	void update() override;
 	void draw() const override;
+
+
+	String text;
+
 
 	void item_update();
 };
