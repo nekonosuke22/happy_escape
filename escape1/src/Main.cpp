@@ -17,7 +17,7 @@ void Main()
 	manager.add<Game>(State::Game);
 
 	// ゲームシーンから開始したい場合はこのコメントを外す
-	//manager.init(State::Game);
+	manager.init(State::Game);
 
 	while (System::Update())
 	{
