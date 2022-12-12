@@ -48,6 +48,7 @@ void Game::item_update()
 	ticket.update();
 	if (ticket.clicked()) {
 		messageBox.setText(U"ticket");
+
 		ticket.setVisibility(false);
 	}
 	door.update();
