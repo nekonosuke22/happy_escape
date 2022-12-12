@@ -10,5 +10,6 @@ public:
 private:
 	Font m_font = Font{ 25 };
 	String m_text;
+	Stopwatch m_stopwatch;
 };
 
