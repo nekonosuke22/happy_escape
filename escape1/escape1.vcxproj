@@ -116,8 +116,8 @@
     <ClCompile Include="src\Clear.cpp" />
     <ClCompile Include="src\Game\Game.cpp" />
     <ClCompile Include="src\Game\Item\Item.cpp" />
-    <ClCompile Include="src\Game\Manager.cpp" />
     <ClCompile Include="src\Game\MessageBox.cpp" />
+    <ClCompile Include="src\Game\Room\Room.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Title\Title.cpp" />
     <ClCompile Include="stdafx.cpp">
@@ -323,8 +323,8 @@
     <ClInclude Include="src\Common.hpp" />
     <ClInclude Include="src\Game\Game.hpp" />
     <ClInclude Include="src\Game\Item\Item.hpp" />
-    <ClInclude Include="src\Game\Manager.hpp" />
     <ClInclude Include="src\Game\MessageBox.hpp" />
+    <ClInclude Include="src\Game\Room\Room.hpp" />
     <ClInclude Include="src\Title\Title.hpp" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>

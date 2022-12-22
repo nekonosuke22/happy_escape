@@ -1,8 +1,8 @@
 ﻿#include "Common.hpp"
 #include "Title/Title.hpp"
 #include "Game/Game.hpp"
-#include "Game/Item/Item.hpp"
 #include "Clear.hpp"
+
 
 void Main()
 {
@@ -19,7 +19,7 @@ void Main()
 	manager.add<Clear>(State::Clear);
 
 	// 始める状態
-	manager.init(State::Title);
+	manager.init(State::Game);
 
 	while (System::Update())
 	{

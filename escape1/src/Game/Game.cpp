@@ -27,7 +27,7 @@ void Game::update()
 void Game::draw() const
 {
 	if (screen_num == 0) {
-		screen_draw(test);
+		screen_draw(room[0]);
 	}
 	else {
 		screen_draw(test2);
