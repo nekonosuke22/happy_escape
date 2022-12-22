@@ -1,5 +1,6 @@
 ﻿#pragma once
 #include "../Common.hpp"
+#include "Manager.hpp"
 #include "MessageBox.hpp"
 #include "Item/Item.hpp"
 
@@ -20,6 +21,8 @@ private:
 
 	Font debugFont{ 50 };
 
+	Array<Item> haveItem;
+
 public:
 	Game(const InitData& init);
 	void update() override;
@@ -28,6 +31,7 @@ public:
 	void draw() const override;
 
 	void item_update();
+	void getItem(Item);
 	void screen_draw(Texture) const;
 
 

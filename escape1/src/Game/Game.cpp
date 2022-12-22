@@ -54,11 +54,16 @@ void Game::item_update()
 	door.update();
 	if (door.clicked()) {
 		messageBox.setText(U"door");
-
-		if (screen_num == 0) {
+		if (ticket.getItem())
+		{
+			changeScene(State::Clear);
+		}
+		else if (screen_num == 0)
+		{
 			screen_num = 1;
 		}
-		else {
+		else
+		{
 			screen_num = 0;
 		}
 	}

@@ -1,5 +1,5 @@
 ﻿#pragma once
-#include <Siv3D.hpp>
+#include "../../Common.hpp"
 
 class Item
 {
@@ -15,6 +15,7 @@ public:
 	void update();
 	void updateCursorStyle() const;
 	bool clicked() const;
+	bool getItem() const;
 
 
 
@@ -22,5 +23,6 @@ public:
 
 	// Visibility の変更
 	void setVisibility(bool visible);
+
 
 };

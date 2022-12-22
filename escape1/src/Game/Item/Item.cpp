@@ -33,6 +33,17 @@ bool Item::clicked() const
  	return m_circle.leftClicked();
 }
 
+bool Item::getItem() const
+{
+	if (!m_visible) {
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
 void Item::draw() const
 {
 	if (!m_visible)

@@ -10,6 +10,7 @@ enum class State
 {
 	Title,
 	Game,
+	Clear,
 };
 
 using App = SceneManager<State>;
